@@ -1,7 +1,7 @@
 ﻿using System;
 namespace TS.TechnicalTest
 {
-    class Program
+    class Progra
         {
             static void Main(string[] args)
             {
