@@ -29,8 +29,11 @@ namespace TS.TechnicalTest
                 while(r < n -1 && A[r] <= A[r +1]){
                     r++; // finding the right side of the pit
                 }
-
+                int maxDepth = Math.Min(A[i] - A[q], A[r] - A[q]);
+                deepestPt = Math.Max(deepestPt, maxDepth);
+                i = r -1;
               }
+                return deepestPt;
 
         }
     }
