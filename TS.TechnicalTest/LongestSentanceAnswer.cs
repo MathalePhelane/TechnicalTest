@@ -1,10 +1,14 @@
-﻿
-namespace TS.TechnicalTest;
-
-public class LongestSentanceAnswer
+﻿using System;
+namespace TS.TechnicalTest
 {
-    public static int Solution(string s)
-    {
-        throw new NotImplementedException("Not completed yet");
-    }
+    class Program
+        {
+            static void Main(string[] args)
+            {
+                var textSplitter = new TextSplitter();
+                var analyzer = new SentenceAnalyzer(textSplitter);
+                var (sentence, wordCount) = analyzer.FindLongestSentence("We test coders. Give us a try?");
+                Console.WriteLine($"The sentence with the most words is: \"{sentence.Trim()}\" with {wordCount} words.");
+            }
+        }
 }

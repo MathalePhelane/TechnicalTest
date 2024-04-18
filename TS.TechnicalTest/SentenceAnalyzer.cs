@@ -20,7 +20,7 @@ namespace TS.TechnicalTest
 
             var sentences = _textSplitter.SplitintoSentences(text);
 
-            string longestSentence = null;
+            string longestSentence = string.Empty;
             int maxWordCount = 0;
 
             foreach (var sentence in sentences)
