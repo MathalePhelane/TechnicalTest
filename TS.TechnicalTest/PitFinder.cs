@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 
 namespace TS.TechnicalTest
 {
-    public interface IPitFinder
+    public class PitFinder
     {
-      int FindDeepestPit(int[] arr);
+        
     }
 }
